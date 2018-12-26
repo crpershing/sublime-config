@@ -1,0 +1,39 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Asterisk Config",
+		"Asterisk Extended Language",
+		"ChangeList",
+		"ColorPicker",
+		"DiffTabs",
+		"DocBlockr",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"JavaScript Completions",
+		"Local History",
+		"MoveTab",
+		"NeoVintageous",
+		"Package Control",
+		"PHPUnitKit",
+		"ProjectManager",
+		"SFTP",
+		"SideBarEnhancements",
+		"SimplePHPUnit",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeLinter-php",
+		"Theme - Soda",
+		"TodoReview",
+		"TrailingSpaces",
+		"Xdebug Client"
+	],
+	"repositories":
+	[
+		"https://github.com/SublimeLinter/SublimeLinter"
+	]
+}

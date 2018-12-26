@@ -1,0 +1,75 @@
+[
+	//move from tab to tab like the browser hotkeys
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+	//SFTP remappings
+	{ "keys": ["ctrl+shift+u"], "command": "sftp_upload_file" },
+	{ "keys": ["ctrl+shift+o"], "command": "sftp_download_file" },
+	{ "keys": ["ctrl+alt+u"], "command": "sftp_diff_remote_file" },
+	{ "keys": ["ctrl+alt+x"], "command": "sftp_cancel_upload"},
+
+	//"select next"
+	{ "keys": ["ctrl+shift+d"], "command": "find_under_expand" },
+
+	//soft undo
+	{ "keys": ["alt+u"], "command": "soft_undo" },
+
+    //toggle wrap
+    { "keys": ["alt+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+
+    //rebind "Go To Definition"
+    { "keys": ["ctrl+t"], "command": "goto_definition" },
+
+    //reposition tabs
+    { "keys": ["ctrl+shift+,"], "command": "move_tab", "args": { "position": "-1" } },
+    { "keys": ["ctrl+shift+."], "command": "move_tab", "args": { "position": "+1" } },
+
+    //toggle side bar
+	{ "keys": ["ctrl+shift+b"], "command": "toggle_side_bar" },
+
+	//remove trailing white spaces
+	{ "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
+
+	//rebind ctrl+[ to enter insert mode
+	{ "keys": ["ctrl+]"], "command": "unbound" },
+	{ "keys": ["ctrl+["], "command": "unbound" },
+	{
+	    "keys": ["ctrl+["],
+	    "command": "_enter_normal_mode",
+	    "args": {
+	        "mode": "mode_insert"
+	    },
+	},
+
+	//unbind this as it was never useful but I kept accidently hitting it...
+	{ "keys": ["ctrl+;"], "command": "unbound" },
+
+	//Project Manager shortcuts
+    {
+        "keys": ["alt+p"],
+        "command": "project_manager", "args": {"action": "switch"}
+    },
+    {
+        "keys": ["ctrl+alt+p"],
+        "command": "project_manager", "args": {"action": "new"}
+    },
+
+	//emulate vim movements with alt which can be useful in Find and Command Palette
+	{ "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+	{ "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+	{ "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true} },
+	{ "keys": ["ctrl+alt+h"], "command": "move", "args": {"by": "words", "forward": false} },
+	{ "keys": ["ctrl+alt+l"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+
+	//multi select lines with multiple cursors
+	{ "keys": ["ctrl+alt+k"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["ctrl+alt+j"], "command": "select_lines", "args": {"forward": true} },
+
+	//emulate vim scrolling with keyboard
+	{ "keys": ["ctrl+u"], "command": "scroll_lines", "args" : {"amount": 40.0} },
+	{ "keys": ["ctrl+d"], "command": "scroll_lines", "args" : {"amount": -40.0} },
+	{ "keys": ["ctrl+k"], "command": "scroll_lines", "args" : {"amount": 5.0} },
+	{ "keys": ["ctrl+j"], "command": "scroll_lines", "args" : {"amount": -5.0} },
+]
