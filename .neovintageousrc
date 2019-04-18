@@ -2,11 +2,11 @@
 let mapleader=,
 
 " Leader mappings
-nnoremap <leader>p "+p
-nnoremap <leader>P "+P
-nnoremap <leader>y "+y
-nnoremap <leader>d 0D
-nnoremap <leader>vl vg_
-nnoremap <leader>vh v^
-nnoremap <leader>vo ^vg_
-nnoremap <leader>b :ToggleSideBar<CR>
+noremap <leader>p "+p
+noremap <leader>P "+P
+noremap <leader>y "+y
+noremap <leader>d 0D
+noremap <leader>vl vg_
+noremap <leader>vh v^
+noremap <leader>vo ^vg_
+noremap <leader>b :ToggleSideBar<CR>
