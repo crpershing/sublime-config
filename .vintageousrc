@@ -9,3 +9,4 @@ nnoremap <leader>d 0D
 nnoremap <leader>vl vg_
 nnoremap <leader>vh v^
 nnoremap <leader>vo ^vg_
+nnoremap <leader>b :ToggleSideBar<CR>
