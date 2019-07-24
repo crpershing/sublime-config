@@ -28,9 +28,6 @@
     { "keys": ["ctrl+shift+,"], "command": "move_tab", "args": { "position": "-1" } },
     { "keys": ["ctrl+shift+."], "command": "move_tab", "args": { "position": "+1" } },
 
-	//remove trailing white spaces
-	{ "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
-
 	//rebind ctrl+[ to enter insert mode
 	{ "keys": ["ctrl+]"], "command": "unbound" },
 	{ "keys": ["ctrl+["], "command": "unbound" },
