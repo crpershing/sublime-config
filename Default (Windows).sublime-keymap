@@ -21,12 +21,12 @@
     //rebind "Go To Definition"
     { "keys": ["ctrl+t"], "command": "goto_definition" },
 
+    //toggle sidebar
+    { "keys": ["alt+b"], "command": "toggle_side_bar" },
+
     //reposition tabs
     { "keys": ["ctrl+shift+,"], "command": "move_tab", "args": { "position": "-1" } },
     { "keys": ["ctrl+shift+."], "command": "move_tab", "args": { "position": "+1" } },
-
-    //toggle side bar
-	{ "keys": ["ctrl+shift+b"], "command": "toggle_side_bar" },
 
 	//remove trailing white spaces
 	{ "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
