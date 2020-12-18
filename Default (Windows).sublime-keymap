@@ -28,16 +28,14 @@
     { "keys": ["ctrl+shift+,"], "command": "move_tab", "args": { "position": "-1" } },
     { "keys": ["ctrl+shift+."], "command": "move_tab", "args": { "position": "+1" } },
 
-	//rebind ctrl+[ to enter insert mode
 	{ "keys": ["ctrl+]"], "command": "unbound" },
 	{ "keys": ["ctrl+["], "command": "unbound" },
-	{
-	    "keys": ["ctrl+["],
-	    "command": "_enter_normal_mode",
-	    "args": {
-	        "mode": "mode_insert"
-	    },
-	},
+
+	//rebind ctrl+[ to enter normal mode
+	{"keys": ["ctrl+["], "command": "nv_cmdline_feed_key", "args": {"key": "<C-[>"}, "context": [{"key": "setting._nv_ex_mode"}]},
+	{"keys": ["ctrl+["], "command": "nv_feed_key", "args": {"key": "<esc>"}, "context": [{"key": "vi_insert_mode_aware"}]},
+	{"keys": ["ctrl+["], "command": "nv_feed_key", "args": {"key": "<esc>"}, "context": [{"key": "vi_command_mode_aware"}]},
+	// {"keys": ["ctrl+["], "command": "nv_feed_key", "args": {"key": "<C-[>"}, "context": [{"key": "vi_command_mode_aware"}]},
 
 	//unbind this as it was never useful but I kept accidently hitting it...
 	{ "keys": ["ctrl+;"], "command": "unbound" },
@@ -50,6 +48,17 @@
     {
         "keys": ["ctrl+alt+p"],
         "command": "project_manager", "args": {"action": "new"}
+    },
+
+    //open Sublime Merge
+    {
+        "keys": ["ctrl+m"],
+        "command": "sublime_merge_open_repo"
+    },
+
+    {
+        "keys": ["ctrl+e"],
+        "command": "emmet_expand_abbreviation"
     },
 
 	//emulate vim movements with alt which can be useful in Find and Command Palette

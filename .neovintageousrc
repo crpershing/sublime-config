@@ -1,10 +1,6 @@
 " Leader Key!
 let mapleader=,
 
-" Remap moving to previous and next git changes to use git gutter bindings
-nnoremap [c :GitGutterPrevChange<CR>
-nnoremap ]c :GitGutterNextChange<CR>
-
 " Leader mappings
 noremap <leader>p "+p
 noremap <leader>P "+P
@@ -14,5 +10,8 @@ noremap <leader>vl vg_
 noremap <leader>vh v^
 noremap <leader>vo ^vg_
 noremap <leader>b :ToggleSideBar<CR>
-noremap <leader>gs :GitGutterDiffPopup<CR>
+noremap <leader>gs :ToggleInlineDiff<CR>
 noremap <leader>gr :GitGutterRevertChange<CR>
+
+noremap [c :GitGutterPrevChange<CR>
+noremap ]c :GitGutterNextChange<CR>
